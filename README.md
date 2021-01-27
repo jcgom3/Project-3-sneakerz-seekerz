@@ -56,7 +56,7 @@
 # Heroku
 
 
-!()
+!(https://covid-19-vax-locations.herokuapp.com/)
 
 
 # License
