@@ -63,7 +63,7 @@
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 # Contributing
-​Contributors: Juan Gomez, Matthew Cowley, Nikita Pokamestov & Jonathan Saunders
+​Contributors: Juan Gomez, Matthew Cowley, Nikita Pokamestov, Jonathan Saunders & Justin Jenkins
 
 # Tests
 N/A
@@ -73,4 +73,4 @@ N/A
   * [My GitHub Profile](https://github.com/jcgom3)
   * [My Github Project Repository](https://github.com/jcgom3/Covid-19-Vax-Locations)
   * [My Github Deployed IO](https://jcgom3.github.io/Covid-19-Vax-Locations)
-  * Email us at: [Jcgom3@gmail.com](mailto:Jcgom3@gmail.com), [matthewcowley01@gmail.com](mailto:matthewcowley01@gmail.com), [n.pokamestov@icloud.com](mailto:n.pokamestov@icloud.com) & [jonnysaunders10@gmail.com](mailto:jonnysaunders10@gmail.com) with questions or make an issue about this project.
+  * Email us at: [Jcgom3@gmail.com](mailto:Jcgom3@gmail.com), [matthewcowley01@gmail.com](mailto:matthewcowley01@gmail.com), [n.pokamestov@icloud.com](mailto:n.pokamestov@icloud.com), [jonnysaunders10@gmail.com](mailto:jonnysaunders10@gmail.com) & [justinjnkns1@gmail.com](mailto:justinjnkns1@gmail.com) with questions or make an issue about this project.
