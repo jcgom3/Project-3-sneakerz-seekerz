@@ -5,6 +5,7 @@
 
 ## Summary
 
+A place where you can see current cases, people that had been vaccinated and sign up to make an appointment to get vaccinated near your current location
 
 
 ## Tools Used
