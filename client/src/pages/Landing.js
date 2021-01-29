@@ -4,7 +4,8 @@ import React from 'react';
 // import Cart from '../components/Cart';
 
 
-function Home() {
+function Landing() {
+
     return (
         <div className='home'>
             <h1>Home</h1>
@@ -15,15 +16,4 @@ function Home() {
     );
 }
 
-// const Home = () => {
-    
-//     return (
-//         <div className='container'>
-//             <CategoryMenu />
-//             <ProductList />
-//             <Cart />
-//         </div>
-//     );
-// };
-
-export default Home;
+export default Landing;
