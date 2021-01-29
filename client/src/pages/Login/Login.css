@@ -1,0 +1,13 @@
+.container {
+    background-color: purple;
+    width: 60%;
+    height: 70vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.Login{
+    background-color: blue;
+    height: 100vh;
+}

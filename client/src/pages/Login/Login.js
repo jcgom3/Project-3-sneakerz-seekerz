@@ -30,12 +30,16 @@ function Login(props) {
     };
   
     return (
-      <div className="container my-1">
+      <div className="Login">
+        <div>
         <Link to="/signup">
           ← Go to Signup
         </Link>
-  
+        </div>
+        <div className="container">
+
         <h2>Login</h2>
+
         <form onSubmit={handleFormSubmit}>
           <div className="flex-row space-between my-2">
             <label htmlFor="email">Email address:</label>
@@ -68,6 +72,9 @@ function Login(props) {
             </button>
           </div>
         </form>
+
+
+        </div>
       </div>
     );
   }
