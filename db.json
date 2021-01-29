@@ -1,0 +1,211 @@
+[
+    {
+        "id": 1,
+        "brand": "Jordan",
+        "sku": "CT8012-011",
+        "name": "Jordan 11 Retro Jubilee",
+        "price": "220"
+    },
+    {
+        "id": 2,
+        "brand": "Jordan",
+        "sku": "555088-105",
+        "name": "Jordan 1 Retro Dark Mocha",
+        "price": "170"
+    },
+    {
+        "id": 3,
+        "brand": "Jordan",
+        "sku": "555088-118",
+        "name": "Jordan 1 Volt University Gold",
+        "price": "170"
+    },
+    {
+        "id": 4,
+        "brand": "Jordan",
+        "sku": "DC7770-160",
+        "name": "Jordan 4 Retro Fire Red",
+        "price": "200"
+    },
+    {
+        "id": 5,
+        "brand": "Jordan",
+        "sku": "555088-030",
+        "name": "Jordan 1 Pine Green Black",
+        "price": "170"
+    },
+    {
+        "id": 6,
+        "brand": "Jordan",
+        "sku": "555088-500",
+        "name": "Jordan 1 Court Purple"
+    },
+    {
+        "id": 7,
+        "brand": "Nike",
+        "sku": "CT1689-001",
+        "name": "Nike Air Max 95 Neon",
+        "price": "170"
+    },
+    {
+        "id": 8,
+        "brand": "Nike",
+        "sku": "CI1503-001",
+        "name": "Nike Air Max 97 Neon Seoul",
+        "price": "170"
+    },
+    {
+        "id": 9,
+        "brand": "Nike",
+        "sku": "908375-103",
+        "name": "Nike Air Max 1 Anniversary Red",
+        "price": "140"
+    },
+    {
+        "id": 10,
+        "brand": "Nike",
+        "sku": "908375-102",
+        "name": "Nike Air Max 1 Anniversary Royal",
+        "price": "140"
+    },
+    {
+        "id": 11,
+        "brand": "Nike",
+        "sku": "AQ1090-100",
+        "name": "Nike React Element 87 Sail",
+        "price": "160"
+    },
+    {
+        "id": 12,
+        "brand": "Nike",
+        "sku": "AQ1090-300",
+        "name": "Nike React Element 87 Moss",
+        "price": "160"
+    },
+    {
+        "id": 13,
+        "brand": "Nike",
+        "sku": "CZ8149-002",
+        "name": "Nike Dunk High Maize",
+        "price": "120"
+    },
+    {
+        "id": 14,
+        "brand": "Nike",
+        "sku": "CZ8149-700",
+        "name": "Nike Dunk High Michigan",
+        "price": "120"
+    },
+    {
+        "id": 15,
+        "brand": "Nike",
+        "sku": "CZ8149-100",
+        "name": "Nike Dunk High Spartan Green",
+        "price": "120"
+    },
+    {
+        "id": 16,
+        "brand": "Adidas",
+        "sku": "FW3042",
+        "name": "Yeezy Boost 350 V2 Citrin",
+        "price": "220"
+    },
+    {
+        "id": 17,
+        "brand": "Adidas",
+        "sku": "CP9366",
+        "name": "Yeezy Boost 350 V2 Cream",
+        "price": "220"
+    },
+    {
+        "id": 18,
+        "brand": "Adidas",
+        "sku": "FX9033",
+        "name": "Yeezy Boost 350 V2 Earth",
+        "price": "220"
+    },
+    {
+        "id": 19,
+        "brand": "Adidas",
+        "sku": "EG7597",
+        "name": "Yeezy Boost 700 Inertia",
+        "price": "300"
+    },
+    {
+        "id": 20,
+        "brand": "Adidas",
+        "sku": "EE9614",
+        "name": "Yeezy 700 Mauve",
+        "price": "300"
+    },
+    {
+        "id": 21,
+        "brand": "Adidas",
+        "sku": "BB6168",
+        "name": "Adidas Ultra Boost 4.0 White",
+        "price": "180"
+    },
+    {
+        "id": 22,
+        "brand": "Adidas",
+        "sku": "BB4677",
+        "name": "Adidas Ultra Boost 1.0 Black",
+        "price": "200"
+    },
+    {
+        "id": 23,
+        "brand": "Adidas",
+        "sku": "M20324",
+        "name": "Adidas Stan Smith White Green",
+        "price": "60"
+    },
+    {
+        "id": 24,
+        "brand": "Adidas",
+        "sku": "M20325",
+        "name": "Adidas Stan Smith White Navy",
+        "price": "60"
+    },
+    {
+        "id": 25,
+        "brand": "Puma",
+        "sku": "364669_02",
+        "name": "Clyde Core Foil Men's Sneakers White",
+        "price": "70"
+    },
+    {
+        "id": 26,
+        "brand": "Puma",
+        "sku": "364669_04",
+        "name": "Clyde Core Foil Men's Sneakers Black",
+        "price": "70"
+    },
+    {
+        "id": 27,
+        "brand": "Puma",
+        "sku": "380498_01",
+        "name": "RS-Fast Metal v2 Sneakers Gold",
+        "price": "110"
+    },
+    {
+        "id": 28,
+        "brand": "Puma",
+        "sku": "194419_03",
+        "name": "Fuse Training Shoes White",
+        "price": "90"
+    },
+    {
+        "id": 29,
+        "brand": "Puma",
+        "sku": "194419_01",
+        "name": "Fuse Training Shoes Black",
+        "price": "90"
+    },
+    {
+        "id": 30,
+        "brand": "Puma",
+        "sku": "380173_04",
+        "name": "Speedcat Motorsport Shoes Red",
+        "price": "90"
+    }
+]
