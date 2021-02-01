@@ -44,10 +44,10 @@ await User.create({
     lastName: 'Saunders',
     email: 'jsaun@gmail.com',
     password: 'hfida'
-}]
+});
 
 
-    console.log('user seeded');
+console.log('user seeded');
 
 process.exit();
 
