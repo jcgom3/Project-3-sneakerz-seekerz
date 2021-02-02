@@ -28,7 +28,7 @@ const products = [
     {
         name: 'Jordan 1 Retro Dark Mocha',
         description: 'Retro Jordan 1 with earthy colors',
-        image: '/../images/shoe2-.jpg',
+        image: '/../images/shoe-2.jpg',
         brand: brands[1]._id,
         price: 170,
         quantity: 6
