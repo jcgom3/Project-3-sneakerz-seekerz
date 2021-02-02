@@ -3,7 +3,6 @@ const { User, Brand, Product } = require("../models");
 
 db.once('open', async () => {
     await Brand.deleteMany();
-})
 
 const brands = await Brand.insertMany([
     { name: 'Puma' },
@@ -16,7 +15,7 @@ console.log('brands seeded')
 
 await Product.deleteMany();
 
-const products = [
+const products = await Product.insertMany([
     {
         name: 'Jordan 11 Retro Jubilee',
         description: 'All black upper on the Jordan 11 Model',
@@ -256,7 +255,8 @@ const products = [
         brand: brands[0]._id,
         price: 90,
         quantity: 10
-    }];
+    }
+]);
 
 
 console.log('product seeded');
@@ -285,5 +285,4 @@ console.log('user seeded');
 
 process.exit();
 
-
-
+});
