@@ -1,19 +1,19 @@
 import React from 'react';
-// import ProductList from '../components/ProductList';
-// import CategoryMenu from '../components/CategoryMenu';
-// import Cart from '../components/Cart';
+import ProductList from '../components/ProductList';
+import BrandMenu from '../components/BrandMenu';
+import ShoppingCart from '../components/ShoppingCart';
 
 
-function Landing() {
+const Landing = () => {
 
     return (
         <div className='home'>
             <h1>Home</h1>
-            {/* <CategoryMenu />
+            <BrandMenu />
             <ProductList />
-            <Cart /> */}
+            <ShoppingCart /> 
         </div>
     );
-}
+};
 
 export default Landing;
