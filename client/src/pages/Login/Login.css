@@ -1,12 +1,39 @@
+.Login{
+  display: inline-flex;
+  background-color:rgb(2, 223, 223);
+}
+button{
+  all: unset;
+}
+input{
+  all: unset;
+  width: 80%;
+}
+
+.img{
+    display: flex;
+    border-radius:0 2% .5% 0;
+    width: 60vw;
+    height: 100vh;
+}
+.background{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 100%;
+}
+
 .card {
-  display: flex;
-  flex-wrap: wrap;
-    width: 60%;
-    height: 70vh;
-    margin: 2vh;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2%;
+  display: block;
+  background-color:#060b26;
+  color: white;
+    width:85%;
+    height:95vh;
+    /* margin: 2vh; */
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 4%;
     border: black;
     box-shadow: 1px 2px 50px 1px #060b26;
     transition: .2s;
@@ -17,13 +44,7 @@
     box-shadow:1px 2px 20px 1px #060b26 ;
   }
 
-.background{
-    padding-top: 2%;
-    background-image: url('../../images/login.jpg');
-    background-position: right bottom;
-    background-size: cover;
-    height: 100vh;
-}
+
 .card-hdr{
 border-bottom:3px groove#060b26;
 width: 100%;
@@ -31,26 +52,54 @@ width: 100%;
 
 h2{
   text-align: center;
-  font-size: 5rem;
-  color: #15DB95;
+  font-size: 8vh;
+  color:white;
   margin-bottom:3vh;
   padding-top: 3%;
 }
 
 
 .card-body{
- height: 50%;
- background-color:#282828;
+ height: 50vh;
  margin-left: auto;
  margin-right: auto;
+ font-size: 10rem;
+}
+.card-ftr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.btn{
+  background-color: green;
+  border-radius:50%;
+  width: 10rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 form{
-  font-size:6vh;
+  font-size:2rem;
   text-align:left;
-  color: #15DB95;
   margin: 2vw;
   flex-wrap: nowrap;
-  height: 90%;
+  height: 80%;
+}
+.error-text{
+  font-size: 3vh;
+}
+
+@media(max-width:2404){
+  .Login{
+    display: block;
+  }
+  .img{
+    width: 100vw;
+  }
+  .background{
+    width:100vw;
+  }
 }

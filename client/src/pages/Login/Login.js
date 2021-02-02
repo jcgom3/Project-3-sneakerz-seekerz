@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { LOGIN } from "../../utils/mutations"
 import Auth from "../../utils/auth"
 import '../Login/Login.css'
+import loginImg from '../../images/login.jpg'
+
 
 
 function Login(props) {
@@ -31,17 +33,20 @@ function Login(props) {
   
     return (
       <div className="Login">
-        <div className='background'>
-          <div className="card">
-                <div className="card-hdr">
-                 <h2>Login</h2>
-                </div>
+        <img src = {loginImg} alt='' className='img'></img>
+
+        <div className='background'>  
+        <div className="card">
+        <div className="card-hdr">
+                 <h2>Create A Account</h2>
+        </div>
+        
         <div className="card-body">
         <form onSubmit={handleFormSubmit} id="login">
           <div className="flex-row space-between my-2">
-            <label htmlFor="email">Email address:</label>
+            <label htmlFor="email">Email:</label>
             <input
-              placeholder="youremail@test.com"
+              placeholder="email@here.com"
               name="email"
               type="email"
               id="email"
@@ -64,22 +69,27 @@ function Login(props) {
             </div> : null
           }
         </form>
+        </div>
 
+        <div className='card-ftr'>
         <div className="btn">
             <button type="submit" form="login" value="Submit">
-              Submit
+              Create Account
             </button>
           </div>
-        </div>
+          </div>
 
-        </div>
+
         <div>
         <Link to="/signup">
           ← Go to Signup
         </Link>
         </div>
+
         </div>
-      </div>
+        </div>
+
+        </div>
     );
   }
   
