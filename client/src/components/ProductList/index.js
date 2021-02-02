@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-import spinner from '../../assets/spinner.gif';
+// import spinner from '../../assets/spinner.gif';
 import ProductItem from '../ProductItem';
 
 function ProductList() {
@@ -72,7 +72,7 @@ function ProductList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      {/* {loading ? <h3>Loading...</h3> : null} */}
     </div>
   );
 }

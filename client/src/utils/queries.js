@@ -31,11 +31,11 @@ export const QUERY_ALL_PRODUCTS = gql`
   }
 `;
 
-export const QUERY_CATEGORIES = gql`
+export const QUERY_BRANDS = gql`
 {
-  categories {
+  brands {
     _id
-    brand
+    name
   }
 }
 `;
