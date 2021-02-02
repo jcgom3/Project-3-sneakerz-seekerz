@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import developers from './pages/Developers'
 import Products from './pages/Products'
 import Developers from './pages/Developers';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path='/products' component={Products}/>
         </Switch>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
