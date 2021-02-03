@@ -9,7 +9,7 @@ const Landing = () => {
     return (
         <div className='home'>
             <h1>Home</h1>
-            {/* <BrandMenu /> */}
+            <BrandMenu />
             <ProductList />
             <Cart /> 
         </div>

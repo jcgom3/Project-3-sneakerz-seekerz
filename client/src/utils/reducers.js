@@ -9,7 +9,7 @@ import {
     UPDATE_CART_QUANTITY,
     CLEAR_CART,
     TOGGLE_CART
-  } from './actions';
+} from './actions';
 
 // Set default state  
 const defaultState = {
@@ -21,7 +21,7 @@ const defaultState = {
 }
 
 // Root reducer
-const reducer = (state=defaultState, action) => {
+const reducer = (state = defaultState, action) => {
     switch (action.type) {
         // if the action type value is the value of `UPDATE_PRODUCTS`, return a new state object with an updated products array
         case UPDATE_PRODUCTS:
@@ -44,9 +44,9 @@ const reducer = (state=defaultState, action) => {
         // if the action type is ADD_TO_CART, return a new state object with the updated cart object
         case ADD_TO_CART:
             return {
-              ...state,
-              cartOpen: true,
-              cart: [...state.cart, action.product]  
+                ...state,
+                cartOpen: true,
+                cart: [...state.cart, action.product]  
             };
         // if the action type is ADD_MULTIPLE_TO_CART, return a new state object with the updated cart object
         case ADD_MULTIPLE_TO_CART:

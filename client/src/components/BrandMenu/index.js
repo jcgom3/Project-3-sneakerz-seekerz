@@ -15,7 +15,7 @@ function BrandMenu() {
 
   const dispatch = useDispatch();
 
-  const { brand } = state;
+  const { brands } = state;
 
   const { loading, data: brandData } = useQuery(QUERY_BRANDS);
 
@@ -25,13 +25,13 @@ function BrandMenu() {
       // execute our dispatch function with our action object indicating the type of action and the data to set our state for brands to
       dispatch({
         type: UPDATE_BRANDS,
-        brands: brandData.brands,
+        brands: brandData.brands
       });
-      brandData.brands.forEach((brand) => {
+      brandData.brands.forEach(brand => {
         idbPromise('brands', 'put', brand);
       });
     } else if (!loading) {
-      idbPromise('brands', 'get').then((brands) => {
+      idbPromise('brands', 'get').then(brands => {
         dispatch({
           type: UPDATE_BRANDS,
           brands: brands,
@@ -50,7 +50,7 @@ function BrandMenu() {
   return (
     <div>
       <h2>Choose a Brand:</h2>
-      {brand.map((item) => (
+      {brands.map((item) => (
         <button
           key={item._id}
           onClick={() => {

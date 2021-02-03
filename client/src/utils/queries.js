@@ -35,7 +35,7 @@ export const QUERY_BRANDS = gql`
 {
   brands {
     _id
-    brand
+    name
   }
 }
 `;
@@ -52,8 +52,8 @@ export const QUERY_USER = gql`
       purchaseDate
       products {
         _id
-        brand
-        sku
+        name
+        description
         price
         quantity
         image
