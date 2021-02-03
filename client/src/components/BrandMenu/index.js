@@ -15,7 +15,7 @@ function BrandMenu() {
 
   const dispatch = useDispatch();
 
-  const { brands } = state;
+  const { brand } = state;
 
   const { loading, data: brandData } = useQuery(QUERY_BRANDS);
 
