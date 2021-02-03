@@ -4,14 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
-import store from './utils/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -23,4 +19,4 @@ reportWebVitals();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below.
-serviceWorker.register()
+serviceWorker.register();

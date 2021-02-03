@@ -8,7 +8,7 @@ export function pluralize(name, count) {
   export function idbPromise(storeName, method, object) {
     return new Promise((resolve, reject) => {
       // open connection to the database `` with the version of 1
-      const request = window.indexedDB.open('SneakerSeeker', 1);
+      const request = window.indexedDB.open('SneakerSpot', 1);
   
       // create variables to hold reference to the database, transaction (tx), and object store
       let db, tx, store;
@@ -18,7 +18,7 @@ export function pluralize(name, count) {
         const db = request.result;
         // create object store for each type of data and set "primary" key index to be the `_id` of the data
         db.createObjectStore('products', { keyPath: '_id' });
-        db.createObjectStore('brands', { keyPath: '_id' });
+        db.createObjectStore('categories', { keyPath: '_id' });
         db.createObjectStore('cart', { keyPath: '_id' });
       };
   

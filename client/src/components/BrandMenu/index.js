@@ -27,11 +27,11 @@ function BrandMenu() {
         type: UPDATE_BRANDS,
         brands: brandData.brands,
       });
-      brandData.brands.forEach(brand => {
+      brandData.brands.forEach((brand) => {
         idbPromise('brands', 'put', brand);
       });
     } else if (!loading) {
-      idbPromise('brands', 'get').then(brands => {
+      idbPromise('brands', 'get').then((brands) => {
         dispatch({
           type: UPDATE_BRANDS,
           brands: brands,
@@ -50,7 +50,7 @@ function BrandMenu() {
   return (
     <div>
       <h2>Choose a Brand:</h2>
-      {brands.map((item) => (
+      {brand.map((item) => (
         <button
           key={item._id}
           onClick={() => {

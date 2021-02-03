@@ -24,7 +24,7 @@ export const QUERY_ALL_PRODUCTS = gql`
       description
       price
       quantity
-      brand{
+      brand {
         name
       }
     }
@@ -35,7 +35,7 @@ export const QUERY_BRANDS = gql`
 {
   brands {
     _id
-    name
+    brand
   }
 }
 `;

@@ -1,52 +1,52 @@
 // import actions
 import {
     UPDATE_PRODUCTS,
-    UPDATE_BRANDS,
-    UPDATE_CURRENT_BRAND,
+    UPDATE_CATEGORIES,
+    UPDATE_CURRENT_CATEGORY,
     ADD_TO_CART,
     ADD_MULTIPLE_TO_CART,
     REMOVE_FROM_CART,
     UPDATE_CART_QUANTITY,
     CLEAR_CART,
     TOGGLE_CART
-} from './actions';
+  } from './actions';
 
 // Set default state  
 const defaultState = {
     products: [],
-    brands: [],
-    currentBrand: '',
-    shoppingCart: [],
+    categories: [],
+    currentCategory: '',
+    cart: [],
     cartOpen: false
 }
 
 // Root reducer
-const reducer = (state = defaultState, action) => {
+const reducer = (state=defaultState, action) => {
     switch (action.type) {
         // if the action type value is the value of `UPDATE_PRODUCTS`, return a new state object with an updated products array
         case UPDATE_PRODUCTS:
             return {
                 ...state,
-                products: [...action.products]
+                products: [...action.products],
             };
-        // if the action type value is the value of `UPDATE_BRANDS`, return a new state object with an updated brand array
-        case UPDATE_BRANDS:
+        // if the action type value is the value of `UPDATE_CATEGORIES`, return a new state object with an updated categories array
+        case UPDATE_CATEGORIES:
             return {
                 ...state,
-                brands: [...action.brands]
+                categories: [...action.categories]
             };
-        // if the action type value is the value of `UPDATE_CURRENT_BRAND`, return a new state object with an updated currentCategory value
-        case UPDATE_CURRENT_BRAND:
+        // if the action type value is the value of `UPDATE_CURRENT_CATEGORY`, return a new state object with an updated currentCategory value
+        case UPDATE_CURRENT_CATEGORY:
             return {
                 ...state,
-                currentBrand: action.currentBrand
+                currentCategory: action.currentCategory
             };
         // if the action type is ADD_TO_CART, return a new state object with the updated cart object
         case ADD_TO_CART:
             return {
-                ...state,
-                cartOpen: true,
-                cart: [...state.cart, action.product]  
+              ...state,
+              cartOpen: true,
+              cart: [...state.cart, action.product]  
             };
         // if the action type is ADD_MULTIPLE_TO_CART, return a new state object with the updated cart object
         case ADD_MULTIPLE_TO_CART:
