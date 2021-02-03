@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import store from './utils/store';
 
 ReactDOM.render(
   <React.StrictMode>
