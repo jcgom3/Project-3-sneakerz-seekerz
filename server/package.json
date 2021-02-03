@@ -1,7 +1,7 @@
 {
     "name": "those-shoes-server",
     "version": "1.0.0",
-    "description": "",
+    "description": "Drop-shipping shoe store",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
@@ -9,7 +9,7 @@
         "seed": "node config/seeds.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "Your Mother",
     "license": "ISC",
     "dependencies": {
         "apollo-server-express": "^2.11.0",
