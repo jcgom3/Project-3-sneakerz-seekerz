@@ -1,10 +1,7 @@
 {
-  "name": "those-shoes",
-  "versioin": "1.0.0",
+  "name": "mern-shopping",
+  "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "14.x"
-  },
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -17,17 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.5.0",
-    "if-env": "^1.0.4",
-    "react-redux": "^7.2.2",
-    "redux": "^4.0.5",
-    "stripe": "^8.132.0",
-    "yargs": "^16.2.0"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jcgom3/Covid-19-Vax-Locations.git"
