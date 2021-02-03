@@ -9,33 +9,33 @@ import {
     UPDATE_CART_QUANTITY,
     CLEAR_CART,
     TOGGLE_CART
-  } from './actions';
+} from './actions';
 
 // Set default state  
 const defaultState = {
     products: [],
     brands: [],
     currentBrand: '',
-    cart: [],
+    shoppingCart: [],
     cartOpen: false
 }
 
 // Root reducer
-const reducer = (state=defaultState, action) => {
+const reducer = (state = defaultState, action) => {
     switch (action.type) {
         // if the action type value is the value of `UPDATE_PRODUCTS`, return a new state object with an updated products array
         case UPDATE_PRODUCTS:
             return {
                 ...state,
-                products: [...action.products],
+                products: [...action.products]
             };
-        // if the action type value is the value of `UPDATE_CATEGORIES`, return a new state object with an updated categories array
+        // if the action type value is the value of `UPDATE_BRANDS`, return a new state object with an updated brand array
         case UPDATE_BRANDS:
             return {
                 ...state,
                 brands: [...action.brands]
             };
-        // if the action type value is the value of `UPDATE_CURRENT_CATEGORY`, return a new state object with an updated currentCategory value
+        // if the action type value is the value of `UPDATE_CURRENT_BRAND`, return a new state object with an updated currentCategory value
         case UPDATE_CURRENT_BRAND:
             return {
                 ...state,
