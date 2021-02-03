@@ -1,8 +1,8 @@
 // import actions
 import {
     UPDATE_PRODUCTS,
-    UPDATE_CATEGORIES,
-    UPDATE_CURRENT_CATEGORY,
+    UPDATE_BRANDS,
+    UPDATE_CURRENT_BRANDS,
     ADD_TO_CART,
     ADD_MULTIPLE_TO_CART,
     REMOVE_FROM_CART,
@@ -14,8 +14,8 @@ import {
 // Set default state  
 const defaultState = {
     products: [],
-    categories: [],
-    currentCategory: '',
+    brands: [],
+    currentBrand: '',
     cart: [],
     cartOpen: false
 }
@@ -30,16 +30,16 @@ const reducer = (state=defaultState, action) => {
                 products: [...action.products],
             };
         // if the action type value is the value of `UPDATE_CATEGORIES`, return a new state object with an updated categories array
-        case UPDATE_CATEGORIES:
+        case UPDATE_BRANDS:
             return {
                 ...state,
-                categories: [...action.categories]
+                brands: [...action.brands]
             };
         // if the action type value is the value of `UPDATE_CURRENT_CATEGORY`, return a new state object with an updated currentCategory value
-        case UPDATE_CURRENT_CATEGORY:
+        case UPDATE_CURRENT_BRAND:
             return {
                 ...state,
-                currentCategory: action.currentCategory
+                currentBrand: action.currentBrand
             };
         // if the action type is ADD_TO_CART, return a new state object with the updated cart object
         case ADD_TO_CART:
