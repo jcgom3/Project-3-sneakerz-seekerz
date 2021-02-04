@@ -3,14 +3,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks'
 import ApolloClient from 'apollo-boost'
+
 import Landing from './pages/Landing'
 import Nav from "./components/Nav/index";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
 import Developers from './pages/Developers'
 import Products from './pages/Products'
-import Footer from './components/Footer';
-
 
 
 const client = new ApolloClient({
@@ -24,7 +23,10 @@ const client = new ApolloClient({
   },
   uri: '/graphql',
 })
+
 function App() {
+  
+
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -38,10 +40,10 @@ function App() {
             <Route path='/developers' component={Developers}/>
             <Route path='/products' component={Products}/>
           </Switch>
-          <Footer></Footer>
         </div>
     </Router>
     </ApolloProvider>
   );
 }
+
 export default App;

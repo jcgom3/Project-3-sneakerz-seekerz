@@ -25,7 +25,7 @@ function BrandMenu() {
       // execute our dispatch function with our action object indicating the type of action and the data to set our state for brands to
       dispatch({
         type: UPDATE_BRANDS,
-        brands: brandData.brands,
+        brands: brandData.brands
       });
       brandData.brands.forEach(brand => {
         idbPromise('brands', 'put', brand);
