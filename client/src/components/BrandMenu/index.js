@@ -49,7 +49,7 @@ function BrandMenu() {
 
   return (
     <div>
-      <h2>Choose a Brand:</h2>
+      <h4>Choose a Brand:</h4>
       {brands.map((item) => (
         <button
           key={item._id}
