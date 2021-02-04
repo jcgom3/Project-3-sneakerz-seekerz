@@ -3,7 +3,7 @@ import { useMutation } from '@apollo/react-hooks';
 import { Link } from "react-router-dom";
 import { LOGIN } from "../../utils/mutations"
 import Auth from "../../utils/auth"
-import '../Login/Login.css'
+import './Login.css'
 import loginImg from '../../images/login.jpg'
 
 
@@ -33,17 +33,16 @@ function Login(props) {
   
     return (
       <div className="Login">
+        <div className='wrapper'>
         <img src = {loginImg} alt='' className='img'></img>
 
-        <div className='background'>  
         <div className="card">
         <div className="card-hdr">
-                 <h2>Create A Account</h2>
+                 <h2>Login</h2>
         </div>
         
         <div className="card-body">
         <form onSubmit={handleFormSubmit} id="login">
-          <div className="flex-row space-between my-2">
             <label htmlFor="email">Email:</label>
             <input
               placeholder="email@here.com"
@@ -52,8 +51,6 @@ function Login(props) {
               id="email"
               onChange={handleChange}
             />
-          </div>
-          <div className="flex-row space-between my-2">
             <label htmlFor="pwd">Password:</label>
             <input
               placeholder="******"
@@ -62,7 +59,6 @@ function Login(props) {
               id="pwd"
               onChange={handleChange}
             />
-          </div>
           {
             error ? <div>
               <p className="error-text" >The provided credentials are incorrect</p>
@@ -72,23 +68,19 @@ function Login(props) {
         </div>
 
         <div className='card-ftr'>
-        <div className="btn">
-            <button type="submit" form="login" value="Submit">
-              Create Account
+            <button className='login-btn' type="submit" form="login" value="Submit">
+              Login
             </button>
+            <Link className ='signup-btn' to="/signup">
+            Go to Signup
+            </Link>
           </div>
-          </div>
 
 
-        <div>
-        <Link to="/signup">
-          ← Go to Signup
-        </Link>
-        </div>
+
 
         </div>
         </div>
-
         </div>
     );
   }

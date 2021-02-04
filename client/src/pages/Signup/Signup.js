@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../../utils/auth";
 import { ADD_USER } from "../../utils/mutations";
+import signupImg from '../../images/login.jpg'
+import './Signup.css'
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -30,58 +32,60 @@ function Signup(props) {
 
   return (
     <div className="Signup">
-      <Link to="/login">
-        ← Go to Login
-      </Link>
+      <div className='wrapper'>
+      <img src={signupImg} alt='' className='img'></img>
 
+      <div className='card'>
+      <div className='card-hdr'>
       <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+      </div
+      >
+      <div className='card-body'>
+      <form onSubmit={handleFormSubmit} id='signup' className='signup-form'>
           <label htmlFor="firstName">First Name:</label>
-          <input
+          <input className='sgn-input'
             placeholder="First"
             name="firstName"
             type="firstName"
             id="firstName"
             onChange={handleChange}
           />
-        </div>
-        <div className="flex-row space-between my-2">
           <label htmlFor="lastName">Last Name:</label>
-          <input
+          <input className='sgn-input'
             placeholder="Last"
             name="lastName"
             type="lastName"
             id="lastName"
             onChange={handleChange}
           />
-        </div>
-        <div className="flex-row space-between my-2">
           <label htmlFor="email">Email:</label>
-          <input
+          <input className='sgn-input'
             placeholder="youremail@test.com"
             name="email"
             type="email"
             id="email"
             onChange={handleChange}
           />
-        </div>
-        <div className="flex-row space-between my-2">
           <label htmlFor="pwd">Password:</label>
-          <input
+          <input className='sgn-input'
             placeholder="******"
             name="password"
             type="password"
             id="pwd"
             onChange={handleChange}
           />
-        </div>
-        <div className="flex-row flex-end">
-          <button type="submit">
-            Submit
-          </button>
-        </div>
       </form>
+      <div className="card-ftr">
+          <button className="sgn-signup-btn"type="submit" form='signup' value='submit'>
+            Sign up!
+          </button>
+          <Link className='sgn-login-btn' to="/login">
+            Go to Login
+          </Link>
+          </div>
+      </div>
+      </div>
+    </div>
     </div>
   );
 
