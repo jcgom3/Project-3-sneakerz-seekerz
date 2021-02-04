@@ -8,10 +8,10 @@ import Landing from './pages/Landing'
 import Nav from "./components/Nav/index";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
-import Developers from './pages/Developers'
+import Developers from './pages/Developers/Developers'
 import Products from './pages/Products'
 import Footer from './components/Footer';
-import GridList from './components/GridList';
+import GridList from './components/GridList/Gridlist';
 
 
 
