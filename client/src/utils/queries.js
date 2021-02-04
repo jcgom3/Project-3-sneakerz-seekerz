@@ -1,15 +1,15 @@
 import gql from 'graphql-tag';
 
 export const QUERY_PRODUCTS = gql`
-  query getProducts($category: ID) {
-    products(category: $category) {
+  query getProducts($brand: ID) {
+    products(brand: $brand) {
       _id
       name
       description
       price
       quantity
       image
-      category {
+      brand {
         _id
       }
     }
@@ -24,7 +24,7 @@ export const QUERY_ALL_PRODUCTS = gql`
       description
       price
       quantity
-      category {
+      brand {
         name
       }
     }
@@ -52,8 +52,8 @@ export const QUERY_USER = gql`
       purchaseDate
       products {
         _id
-        brand
-        sku
+        name
+        description
         price
         quantity
         image

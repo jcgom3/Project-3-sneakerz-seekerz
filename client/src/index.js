@@ -9,7 +9,7 @@ import store from './utils/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store = {store}>
       <App />
     </Provider>
   </React.StrictMode>,
@@ -23,4 +23,4 @@ reportWebVitals();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below.
-serviceWorker.register()
+serviceWorker.register();
