@@ -15,7 +15,7 @@ function Gridlist() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} 
-    // slide={false} fade={false}
+    slide={false} fade={false}
     >
       <Carousel.Item>
         <img
