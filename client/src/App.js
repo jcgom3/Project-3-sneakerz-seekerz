@@ -35,6 +35,7 @@ function App() {
       <Router>
         <div className="App">
           <Nav />
+          <GridList></GridList>
           <Switch>
             <Route path='/' exact component={Landing}/>
             <Route exact path='/login' component={Login}/>
@@ -42,7 +43,6 @@ function App() {
             <Route path='/developers' component={Developers}/>
             <Route path='/products' component={Products}/>
           </Switch>
-          <GridList></GridList>
           <Footer></Footer>
         </div>
     </Router>

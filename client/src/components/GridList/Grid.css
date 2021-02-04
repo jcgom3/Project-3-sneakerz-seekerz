@@ -1,14 +1,18 @@
 .img1 {
     width: 100%;
     height: 650px;
+    z-index: -1;
 }
 
 .img2 {
     width: 100%;
     height: 650px;
+    z-index: -1;
 }
 
 .img3 {
     width: 100%;
     height: 650px;
+    z-index: -1;
 }
+
