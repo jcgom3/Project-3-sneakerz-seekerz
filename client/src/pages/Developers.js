@@ -3,7 +3,7 @@ import React from 'react';
 function Developers() {
     return (
         <div className='developers'>
-            <h1>Home</h1>
+            <h1>Developers</h1>
         </div>
     );
 }
