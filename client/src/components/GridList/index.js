@@ -14,7 +14,9 @@ function Gridlist() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} 
+    // slide={false} fade={false}
+    >
       <Carousel.Item>
         <img
           className="d-block w-10 img1"
@@ -57,3 +59,4 @@ function Gridlist() {
 }
 
 export default Gridlist;
+// render (<Gridlist />);

@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { sign } = require('jsonwebtoken');
+// const { sign } = require('jsonwebtoken');
 const { User, Product, Brand, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
@@ -25,13 +25,13 @@ const resolvers = {
 
             return await Product.find(params).populate('brand')
         },
-        product: async (parent, args, context) => {
+        product: async (parent, { _id }) => {
             return await Product.findById(_id).populate('brand');
         },
         user: async (parent, args, context) => {
             if (context.user) {
                 const user = await User.findById(context.user._id).populate({
-                    path: 'order.products',
+                    path: 'orders.products',
                     populate: 'brand'
                 });
 

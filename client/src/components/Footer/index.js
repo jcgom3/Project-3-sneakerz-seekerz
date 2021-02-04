@@ -18,9 +18,9 @@ function Footer() {
     return(
         <footer style={style}>
             <div>Shoe factory</div>
-            <a href="https://github.com/jcgom3/Project-3-sneakerz-seekerz"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
-            <a href="linkedin.com"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png"/></a>
-            <a href="gmail.com"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png"/></a>
+            <a href="https://github.com/jcgom3/Project-3-sneakerz-seekerz"><img alt='' src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
+            <a href="linkedin.com"><img alt='' src="https://img.icons8.com/bubbles/50/000000/linkedin.png"/></a>
+            <a href="gmail.com"><img alt='' src="https://img.icons8.com/bubbles/50/000000/gmail.png"/></a>
             <div className="copyright">Copyright &copy; 2021 Shoe Factory</div>
         </footer>
     );
