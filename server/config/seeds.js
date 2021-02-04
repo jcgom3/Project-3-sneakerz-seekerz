@@ -19,7 +19,7 @@ const products = await Product.insertMany([
     {
         name: 'Jordan 11 Retro Jubilee',
         description: 'All black upper on the Jordan 11 Model',
-        image: 'images/shoe-1.jpg',
+        image: 'shoe-1.jpg',
         brand: brands[1]._id,
         price: 220,
         quantity: 8
@@ -27,7 +27,7 @@ const products = await Product.insertMany([
     {
         name: 'Jordan 1 Retro Dark Mocha',
         description: 'Retro Jordan 1 with earthy colors',
-        image: 'images/shoe-2.jpg',
+        image: 'shoe-2.jpg',
         brand: brands[1]._id,
         price: 170,
         quantity: 6
@@ -35,7 +35,7 @@ const products = await Product.insertMany([
     {
         name: 'Jordan 1 Volt University Gold',
         description: 'Bright and vibrant take on the classic Jordan 1',
-        image: 'images/shoe-3.jpg',
+        image: 'shoe-3.jpg',
         brand: brands[1]._id,
         price: 170,
         quantity: 15
