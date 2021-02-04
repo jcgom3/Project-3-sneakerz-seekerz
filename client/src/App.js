@@ -31,7 +31,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="App">
-          <h1>Hello World, this is in App.js</h1>
+          {/* <h1>Hello World, this is in App.js</h1> */}
           <Nav />
           <Switch>
             <Route path='/' exact component={Landing}/>

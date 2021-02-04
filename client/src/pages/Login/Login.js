@@ -38,7 +38,7 @@ function Login(props) {
 
         <div className="card">
         <div className="card-hdr">
-                 <h2>Login</h2>
+                 <h2 className='sgn-h2'>Login</h2>
         </div>
         
         <div className="card-body">
@@ -68,10 +68,10 @@ function Login(props) {
         </div>
 
         <div className='card-ftr'>
-            <button className='login-btn' type="submit" form="login" value="Submit">
+            <button className='login-login-btn' type="submit" form="login" value="Submit">
               Login
             </button>
-            <Link className ='signup-btn' to="/signup">
+            <Link className ='login-signup-btn' to="/signup">
             Go to Signup
             </Link>
           </div>

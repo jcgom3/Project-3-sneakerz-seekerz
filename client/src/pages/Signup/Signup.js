@@ -59,7 +59,7 @@ function Signup(props) {
           />
           <label htmlFor="email">Email:</label>
           <input className='sgn-input'
-            placeholder="youremail@test.com"
+            placeholder="email@test.com"
             name="email"
             type="email"
             id="email"
