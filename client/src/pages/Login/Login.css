@@ -91,6 +91,7 @@ h2{
   }
 
 .login-login-btn{
+  text-decoration: none;
   background-color: green;
   color: #060b26;
   width: 45%;
@@ -102,7 +103,7 @@ h2{
   align-items: center;
 }
 .login-signup-btn{
- all:unset;
+ text-decoration: none;
  background-color: yellow;
  color:#060b26;
  border-radius:50%;
@@ -113,7 +114,7 @@ h2{
  justify-content: center;
  align-items: center;
 }
-.signup-btn:hover,.login-btn:hover
+.login-signup-btn:hover,.login-login-btn:hover
 {
 	color: #fff;
 }
