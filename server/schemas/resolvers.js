@@ -81,8 +81,8 @@ const resolvers = {
                     quantity: 1
                 });
             }
-            const session = await stripe.checkout.session.create({
-                payment_menthod_types: ['card'],
+            const session = await stripe.checkout.sessions.create({
+                payment_method_types: ['card'],
                 line_items,
                 mode: 'payment',
                 success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
