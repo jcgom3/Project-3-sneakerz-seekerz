@@ -131,7 +131,7 @@ const products = await Product.insertMany([
     {
         name: 'Nike Dunk High Spartan Green',
         description: 'Michigan Spartans inspired green Dunk High',
-        image: '/../images/shoe-15.jpg',
+        image: 'shoe-15.jpg',
         brand: brands[3]._id,
         price: 120,
         quantity: 11
@@ -139,7 +139,7 @@ const products = await Product.insertMany([
     {
         name: 'Yeezy Boost 350 v2 Citrin',
         description: 'Yeezy Boost 350 v2 with a light-gray upper',
-        image: '/../images/shoe-16.jpg',
+        image: 'shoe-16.jpg',
         brand: brands[2]._id,
         price: 220,
         quantity: 7
@@ -147,7 +147,7 @@ const products = await Product.insertMany([
     {
         name: 'Yeezy Boost 350 v2 Cream',
         description: 'Off-white colored Yeezy 350 v2',
-        image: '/../images/shoe-17.jpg',
+        image: 'shoe-17.jpg',
         brand: brands[2]._id,
         price: 220,
         quantity: 12
