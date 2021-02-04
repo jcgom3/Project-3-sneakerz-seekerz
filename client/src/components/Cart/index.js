@@ -64,16 +64,26 @@ const Cart = () => {
     function submitCheckout() {
         const productIds = [];
 
-        getCheckout({
-            variables: { products: productIds }
-        });
-
         state.cart.forEach((item) => {
             for (let i = 0; i < item.purchaseQuantity; i++) {
                 productIds.push(item._id)
             }
+        });  
+        
+        getCheckout({
+            variables: { products: productIds }
         });
     }
+
+    // if (!state.cartOpen) {
+    //     return (
+    //       <div className="cart-closed" onClick={toggleCart}>
+    //         <span role="img" aria-label="trash">
+    //           🛒
+    //         </span>
+    //       </div>
+    //     );
+    //   }
 
     return (
         <div className="cart">
