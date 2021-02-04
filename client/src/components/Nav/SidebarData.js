@@ -18,7 +18,7 @@ export const SidebarData = [
     // },
     {
         title: 'Products',
-        path: '/products',
+        path: '/productList',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },

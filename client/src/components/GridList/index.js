@@ -4,8 +4,9 @@ import './Grid.css';
 import image1 from '../../Img/shoe-1.jpg';
 import image2 from '../../Img/shoe-2.jpg';
 import image3 from '../../Img/shoe-4.jpg';
+import "bootstrap/dist/css/bootstrap.css"
 
-function Gridlist() {
+function GridList() {
 
   const [index, setIndex] = useState(0);
 
@@ -14,9 +15,7 @@ function Gridlist() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} 
-    // slide={false} fade={false}
-    >
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           className="d-block w-10 img1"
@@ -58,5 +57,4 @@ function Gridlist() {
   );
 }
 
-export default Gridlist;
-// render (<Gridlist />);
+export default GridList;
