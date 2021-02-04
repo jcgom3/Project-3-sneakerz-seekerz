@@ -10,6 +10,7 @@ import Login from './pages/Login/Login'
 import Developers from './pages/Developers'
 import Products from './pages/Products'
 import Footer from './components/Footer';
+import GridList from './components/GridList';
 
 
 
@@ -38,6 +39,7 @@ function App() {
             <Route path='/developers' component={Developers}/>
             <Route path='/products' component={Products}/>
           </Switch>
+          <GridList></GridList>
           <Footer></Footer>
         </div>
     </Router>
