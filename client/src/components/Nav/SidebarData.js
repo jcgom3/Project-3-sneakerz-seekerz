@@ -10,33 +10,33 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
+    // {
+    //     title: 'Buyers',
+    //     path: '/',
+    //     icon: <AiIcons.AiFillHome />,
+    //     cName: 'nav-text'
+    // },
     {
-        title: 'Buyers',
-        path: '/',
-        icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Shop',
-        path: '/',
+        title: 'Products',
+        path: '/products',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
     {
         title: 'Sell',
-        path: '/',
+        path: '/sell',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
     {
         title: 'Contact Us',
-        path: '/',
+        path: '/contact-us',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
     {
         title: 'Developers',
-        path: '/',
+        path: '/developers',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
