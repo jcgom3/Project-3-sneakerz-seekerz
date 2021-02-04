@@ -9,7 +9,7 @@ const Landing = () => {
         <div className='home'>
             <h1>Home</h1>
             <BrandMenu /> 
-             <ProductList />
+            <ProductList />
             <Cart /> 
         </div>
     );
