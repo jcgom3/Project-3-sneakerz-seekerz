@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Grid.css';
-import image1 from '../../images/shoe-1.jpg';
-import image2 from '../../images/shoe-2.jpg';
-import image3 from '../../images/shoe-4.jpg';
+import image1 from '../../Img/shoe-1.jpg';
+import image2 from '../../Img/shoe-2.jpg';
+import image3 from '../../Img/shoe-4.jpg';
 
 function Gridlist() {
 
