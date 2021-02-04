@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useQuery } from '@apollo/react-hooks';
 
 import { QUERY_PRODUCTS } from "../utils/queries";
-import spinner from '../assets/spinner.gif'
+// import spinner from '../assets/spinner.gif'
 
 import { UPDATE_PRODUCTS, REMOVE_FROM_CART, UPDATE_CART_QUANTITY, ADD_TO_CART } from '../utils/actions';
 
@@ -95,7 +95,7 @@ function Detail() {
             ← Back to Products
           </Link>
 
-          <h2>{currentProduct.name}</h2>
+          <h4>{currentProduct.name}</h4>
 
           <p>
             {currentProduct.description}
@@ -117,13 +117,13 @@ function Detail() {
           </p>
 
           <img
-            src={`/images/${currentProduct.image}`}
+            src={`/images${currentProduct.image}`}
             alt={currentProduct.name}
           />
         </div>
       ) : null}
       {
-        loading ? <img src={spinner} alt="loading" /> : null
+        loading ? "loading" : null
       }
       <Cart />
     </>

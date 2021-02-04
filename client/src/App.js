@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks'
 import ApolloClient from 'apollo-boost'
 
-import Landing from './pages/Landing'
+import LandingPage from './components/LandingPage'
 import Nav from "./components/Nav/index";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
 import Developers from './pages/Developers'
-import Products from './pages/Products'
+import ProductList from './components/ProductList'
 import Footer from './components/Footer';
+import Detail from './pages/Detail';
 import GridList from './components/GridList';
 
 
@@ -35,17 +36,17 @@ function App() {
       <Router>
         <div className="App">
           <Nav />
-          <GridList></GridList>
           <Switch>
-            <Route path='/' exact component={Landing}/>
+            <Route exact path='/' component={LandingPage}/>
             <Route exact path='/login' component={Login}/>
             <Route exact path='/signup' component={Signup}/>
-            <Route path='/developers' component={Developers}/>
-            <Route path='/products' component={Products}/>
+            <Route exact path='/developers' component={Developers}/>
+            <Route exact path='/productlist' component={ProductList}/>
+            <Route exact path='/products/:id' component={Detail} />
           </Switch>
           <Footer></Footer>
         </div>
-    </Router>
+      </Router>
     </ApolloProvider>
   );
 }

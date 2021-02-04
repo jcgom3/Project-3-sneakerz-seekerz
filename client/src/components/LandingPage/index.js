@@ -1,18 +1,20 @@
 import React from 'react';
-import ProductList from '../components/ProductList';
-import BrandMenu from '../components/BrandMenu';
-import Cart from '../components/Cart';
+import ProductList from '../ProductList';
+import BrandMenu from '../BrandMenu';
+import Cart from '../Cart';
+import GridList from '../GridList';
+import './style.css';
 
-const Landing = () => {
+const LandingPage = () => {
 
     return (
-        <div className='home'>
-            <h1>Home</h1>
+        <div className='home center'>
             <BrandMenu /> 
-             <ProductList />
+            <GridList />
+            <ProductList />
             <Cart /> 
         </div>
     );
 };
 
-export default Landing;
+export default LandingPage;
