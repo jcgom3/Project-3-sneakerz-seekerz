@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './style.css'
 import { pluralize } from '../../utils/helpers';
 import { useSelector, useDispatch } from 'react-redux';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
@@ -38,7 +39,7 @@ function ProductItem(item) {
   const { image, name, _id, price, quantity } = item;
 
   return (
-    <div className="card px-1 py-1">
+    <div className="card product-container px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img alt={name} src={`/images${image}`} />
         <p>{name}</p>
