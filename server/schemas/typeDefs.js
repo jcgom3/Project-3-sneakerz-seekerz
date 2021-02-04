@@ -25,7 +25,7 @@ const typeDefs = gql`
         orders: [Order]
     }
 
-    type: Auth: {
+    type Auth {
         token: ID
         user: User
     }
@@ -53,7 +53,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
     }
 
-    type: Checkout {
+    type Checkout {
         session: ID
     }
 `;

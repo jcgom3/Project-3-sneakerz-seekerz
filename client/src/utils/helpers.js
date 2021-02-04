@@ -8,7 +8,7 @@ export function pluralize(name, count) {
   export function idbPromise(storeName, method, object) {
     return new Promise((resolve, reject) => {
       // open connection to the database `` with the version of 1
-      const request = window.indexedDB.open('SneakerSeeker', 1);
+      const request = window.indexedDB.open('sneaker-seeker', 2);
   
       // create variables to hold reference to the database, transaction (tx), and object store
       let db, tx, store;
@@ -21,11 +21,12 @@ export function pluralize(name, count) {
         db.createObjectStore('brands', { keyPath: '_id' });
         db.createObjectStore('cart', { keyPath: '_id' });
       };
-  
       // handle any errors with connecting
       request.onerror = function(e) {
         console.log('There was an error');
       };
+
+      // console.log(store)
   
       // on database open success
       request.onsuccess = function(e) {
@@ -35,6 +36,7 @@ export function pluralize(name, count) {
         tx = db.transaction(storeName, 'readwrite');
         // save a reference to that object store
         store = tx.objectStore(storeName);
+
   
         // if there's any errors, let us know
         db.onerror = function(e) {
