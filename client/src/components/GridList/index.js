@@ -23,7 +23,7 @@ function GridList() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>bitches</h3>
+          <h3>People</h3>
           <p>like kicks</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -35,7 +35,7 @@ function GridList() {
         />
 
         <Carousel.Caption>
-          <h3>Mothers</h3>
+          <h3>Humans</h3>
           <p>like kicks</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -47,7 +47,7 @@ function GridList() {
         />
 
         <Carousel.Caption>
-          <h3>women</h3>
+          <h3>Everyone</h3>
           <p>
             like kicks
           </p>
