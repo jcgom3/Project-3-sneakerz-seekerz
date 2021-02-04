@@ -90,7 +90,7 @@ h2{
   overflow: hidden;
   }
 
-.login-btn{
+.login-login-btn{
   background-color: green;
   color: #060b26;
   width: 45%;
@@ -101,7 +101,7 @@ h2{
   justify-content: center;
   align-items: center;
 }
-.signup-btn{
+.login-signup-btn{
  all:unset;
  background-color: yellow;
  color:#060b26;

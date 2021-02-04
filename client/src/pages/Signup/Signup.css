@@ -142,4 +142,9 @@
       width: 100%;
     }
   }
-  
+
+  @media screen and (max-width:1200px){
+    .Signup h2{
+        font-size: 15vw;
+    }
+  }
