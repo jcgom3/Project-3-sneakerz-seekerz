@@ -38,8 +38,7 @@ function Signup(props) {
       <div className='card'>
       <div className='card-hdr'>
       <h2>Signup</h2>
-      </div
-      >
+      </div>
       <div className='card-body'>
       <form onSubmit={handleFormSubmit} id='signup' className='signup-form'>
           <label htmlFor="firstName">First Name:</label>
@@ -75,6 +74,8 @@ function Signup(props) {
             onChange={handleChange}
           />
       </form>
+      </div>
+
       <div className="card-ftr">
           <button className="sgn-signup-btn"type="submit" form='signup' value='submit'>
             Sign up!
@@ -83,8 +84,8 @@ function Signup(props) {
             Go to Login
           </Link>
           </div>
-      </div>
-      </div>
+
+    </div>
     </div>
     </div>
   );
