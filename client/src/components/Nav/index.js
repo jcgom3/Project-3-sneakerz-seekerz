@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Nav.css';
 import { IconContext } from 'react-icons';
-import { Button, Modal } from 'react-bootstrap';
+// import { Button, Modal } from 'react-bootstrap';
 
 function Nav() {
     const [sidebar, setSidebar] = useState(false);
   
     const showSidebar = () => setSidebar(!sidebar);
 
-    const [smShow, setSmShow] = useState(false);
-    const [lgShow, setLgShow] = useState(false);
+    // const [smShow, setSmShow] = useState(false);
+    // const [lgShow, setLgShow] = useState(false);
   
     return (
       <>
