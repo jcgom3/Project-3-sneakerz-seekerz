@@ -1,14 +1,21 @@
 .img1 {
-    width: 100%;
+    max-width: 1000px;
     height: 650px;
+    margin: auto;
+    z-index: -1;
 }
 
 .img2 {
-    width: 100%;
+    max-width: 1000px;
     height: 650px;
+    margin: auto;
+    z-index: -1;
 }
 
 .img3 {
-    width: 100%;
+    max-width: 1000px;
     height: 650px;
+    margin: auto;
+    z-index: -1;
 }
+

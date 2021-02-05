@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { sign } = require('jsonwebtoken');
+// const { sign } = require('jsonwebtoken');
 const { User, Product, Brand, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
@@ -25,13 +25,13 @@ const resolvers = {
 
             return await Product.find(params).populate('brand')
         },
-        product: async (parent, args, context) => {
+        product: async (parent, { _id }) => {
             return await Product.findById(_id).populate('brand');
         },
         user: async (parent, args, context) => {
             if (context.user) {
                 const user = await User.findById(context.user._id).populate({
-                    path: 'order.products',
+                    path: 'orders.products',
                     populate: 'brand'
                 });
 
@@ -81,8 +81,8 @@ const resolvers = {
                     quantity: 1
                 });
             }
-            const session = await stripe.checkout.session.create({
-                payment_menthod_types: ['card'],
+            const session = await stripe.checkout.sessions.create({
+                payment_method_types: ['card'],
                 line_items,
                 mode: 'payment',
                 success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,

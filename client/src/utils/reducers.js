@@ -12,7 +12,7 @@ import {
 } from './actions';
 
 // Set default state  
-const defaultState = {
+const initialState = {
     products: [],
     brands: [],
     currentBrand: '',
@@ -21,7 +21,7 @@ const defaultState = {
 }
 
 // Root reducer
-const reducer = (state = defaultState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         // if the action type value is the value of `UPDATE_PRODUCTS`, return a new state object with an updated products array
         case UPDATE_PRODUCTS:

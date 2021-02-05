@@ -4,8 +4,9 @@ import './Grid.css';
 import image1 from '../../Img/shoe-1.jpg';
 import image2 from '../../Img/shoe-2.jpg';
 import image3 from '../../Img/shoe-4.jpg';
+import "bootstrap/dist/css/bootstrap.css"
 
-function Gridlist() {
+function GridList() {
 
   const [index, setIndex] = useState(0);
 
@@ -22,8 +23,8 @@ function Gridlist() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>bitches</h3>
-          <p>like kicks</p>
+          <h3>Best Kicks</h3>
+          <p>At the cheapest price</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -34,8 +35,8 @@ function Gridlist() {
         />
 
         <Carousel.Caption>
-          <h3>Mothers</h3>
-          <p>like kicks</p>
+          <h3>Shipping</h3>
+          <p>World Wide</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -46,9 +47,9 @@ function Gridlist() {
         />
 
         <Carousel.Caption>
-          <h3>women</h3>
+          <h3>Find a Gift</h3>
           <p>
-            like kicks
+            For your favorite peeps
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -56,4 +57,4 @@ function Gridlist() {
   );
 }
 
-export default Gridlist;
+export default GridList;

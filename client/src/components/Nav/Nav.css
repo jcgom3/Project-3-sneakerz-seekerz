@@ -22,6 +22,7 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    z-index: 99;
   }
   
   .nav-menu.active {
@@ -69,4 +70,10 @@
   
   span {
     margin-left: 16px;
+  }
+
+  h1 {
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 6px;
   }

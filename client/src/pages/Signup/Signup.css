@@ -88,6 +88,7 @@
     }
   
   .sgn-signup-btn{
+    text-decoration: none;
     background-color: green;
     color: #060b26;
     width: 45%;
@@ -99,7 +100,7 @@
     align-items: center;
   }
   .sgn-login-btn{
-   all:unset;
+   text-decoration: none;
    background-color: yellow;
    color:#060b26;
    border-radius:50%;

@@ -1,0 +1,23 @@
+.product-container {
+    display: inline-flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #060b26;
+    color: white;
+    width: 50vw;
+    height: 85vh;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0 4% 4% 0%;
+    border: black;
+    border-style: double;
+    text-align: center;
+}
+
+.height {
+    height: auto;
+}
+
+.product-container img {
+    width: 100%;
+}
