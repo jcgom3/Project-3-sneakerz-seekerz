@@ -37,7 +37,7 @@ export const SidebarData = [
     },
     {
         title: 'Developers',
-        path: '/Developers',
+        path: '/developers',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
