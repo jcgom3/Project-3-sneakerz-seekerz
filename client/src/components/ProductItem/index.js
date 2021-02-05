@@ -39,7 +39,7 @@ function ProductItem(item) {
   const { image, name, _id, price, quantity } = item;
 
   return (
-    <div className="product-container height px-1 py-1">
+    <div className="card product-container px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img alt={name} src={`/images/${image}`} />
         <p>{name}</p>

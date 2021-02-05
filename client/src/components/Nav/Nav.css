@@ -71,3 +71,9 @@
   span {
     margin-left: 16px;
   }
+
+  h1 {
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 6px;
+  }

@@ -23,8 +23,8 @@ function GridList() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>People</h3>
-          <p>like kicks</p>
+          <h3>Best Kicks</h3>
+          <p>At the cheapest price</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,8 +35,8 @@ function GridList() {
         />
 
         <Carousel.Caption>
-          <h3>Humans</h3>
-          <p>like kicks</p>
+          <h3>Shipping</h3>
+          <p>World Wide</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,9 +47,9 @@ function GridList() {
         />
 
         <Carousel.Caption>
-          <h3>Everyone</h3>
+          <h3>Find a Gift</h3>
           <p>
-            like kicks
+            For your favorite peeps
           </p>
         </Carousel.Caption>
       </Carousel.Item>

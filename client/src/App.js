@@ -13,7 +13,7 @@ import ProductList from './components/ProductList'
 import Footer from './components/Footer';
 import Detail from './pages/Detail';
 import Success from './pages/Success';
-// import GridList from './components/GridList';
+import GridList from './components/GridList';
 
 
 
@@ -46,7 +46,6 @@ function App() {
             <Route exact path='/products/:id' component={Detail} />
             <Route ecact path='/success' component={Success} />
           </Switch>
-          {/* <GridList /> */}
           <Footer></Footer>
         </div>
       </Router>
