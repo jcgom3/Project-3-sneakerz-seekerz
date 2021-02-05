@@ -8,12 +8,18 @@ import LandingPage from './components/LandingPage'
 import Nav from "./components/Nav/index";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
-import Developers from './pages/Developers'
+
+import Developers from './pages/Developers/Developers'
+import Products from './pages/Products'
+import Footer from './components/Footer';
+
+
+
 import ProductList from './components/ProductList'
 import Footer from './components/Footer';
 import Detail from './pages/Detail';
 import Success from './pages/Success';
-import GridList from './components/GridList';
+
 
 
 
