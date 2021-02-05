@@ -42,7 +42,7 @@ function Nav() {
                 );
               })}
             </ul>
-            <Button onClick={() => setLgShow(true)}>Sign-up</Button>
+            {/* <Button onClick={() => setLgShow(true)}>Sign-up</Button>
             <Modal
           size="lg"
           show={lgShow}
@@ -55,7 +55,7 @@ function Nav() {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>...</Modal.Body>
-        </Modal>
+        </Modal> */}
           </nav>
         </IconContext.Provider>
       </>

@@ -48,5 +48,5 @@ export const SidebarData = [
         cName: 'nav-text'
     },
 
-    <Modals></Modals>
+    // <Modals></Modals>
 ]
