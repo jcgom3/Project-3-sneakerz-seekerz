@@ -42,15 +42,17 @@ function ProductItem(item) {
     <div className="product-container height px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img alt={name} src={`/images/${image}`} />
-        <p>{name}</p>
+        <p className='white-text'>{name}</p>
       </Link>
-      <div>
-        <div>
-          {quantity} {pluralize('item', quantity)} in stock
+      <div className="item-contents">
+        <div >
+          <div>
+            {quantity} {pluralize('item', quantity)} in stock
+          </div>
+          <span>${price}</span>
         </div>
-        <span>${price}</span>
+        <button class='add-to-cart' onClick={addToCart}>Add to cart</button>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }

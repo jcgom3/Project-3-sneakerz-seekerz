@@ -2,16 +2,16 @@
     display: inline-flex;
     overflow: hidden;
     flex-wrap: wrap;
-    background-color: #060b26;
+    background-color: black;
     color: white;
-    width: 50vw;
-    height: 85vh;
+    width: 48vw;
     margin-left: 0;
     margin-right: 0;
-    border-radius: 0 4% 4% 0%;
+    border-radius: 4%;
     border: black;
     border-style: double;
     text-align: center;
+    margin: 3px
 }
 
 .height {
@@ -20,4 +20,23 @@
 
 .product-container img {
     width: 100%;
+    border-radius: 4%;
+}
+
+.white-text {
+    color: white;
+}
+
+.add-to-cart {
+    background-color: white;
+    color:black;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.item-contents {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }

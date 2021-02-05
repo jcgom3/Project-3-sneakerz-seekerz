@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: none;
   }
   
   .menu-bars {
@@ -69,7 +70,7 @@
   }
   
   span {
-    margin-left: 16px;
+    margin-left: 5px;
   }
 
   h1 {
