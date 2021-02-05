@@ -12,6 +12,7 @@ import Login from './pages/Login/Login'
 import Developers from './pages/Developers/Developers'
 // import Products from './pages/Products'
 import Footer from './components/Footer';
+import ContactUs from './pages/ContactUs';
 
 
 
@@ -47,6 +48,7 @@ function App() {
             <Route exact path='/' component={LandingPage}/>
             <Route exact path='/login' component={Login}/>
             <Route exact path='/signup' component={Signup}/>
+            <Route exact path='/contact-us' component={ContactUs} />
             <Route exact path='/developers' component={Developers}/>
             <Route exact path='/productlist' component={ProductList}/>
             <Route exact path='/products/:id' component={Detail} />
