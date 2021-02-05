@@ -23,12 +23,12 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
-    {
-        title: 'Sell',
-        path: '/sell',
-        icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
-    },
+    // {
+    //     title: 'Sell',
+    //     path: '/sell',
+    //     icon: <AiIcons.AiFillHome />,
+    //     cName: 'nav-text'
+    // },
     {
         title: 'Contact Us',
         path: '/contact-us',
