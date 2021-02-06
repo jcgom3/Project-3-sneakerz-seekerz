@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/react-hooks';
+// import { Link } from 'react-router-dom';
+import './style.css'
 import { QUERY_BRANDS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import { useSelector, useDispatch } from 'react-redux';
@@ -48,8 +50,7 @@ function BrandMenu() {
   };
 
   return (
-    <div>
-      <h4>Choose a Brand:</h4>
+    <div className='scrollmenu'>
       {brands.map((item) => (
         <button
           key={item._id}

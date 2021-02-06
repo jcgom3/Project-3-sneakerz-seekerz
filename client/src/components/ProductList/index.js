@@ -6,7 +6,7 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 // import spinner from '../../assets/spinner.gif';
 import ProductItem from '../ProductItem';
-import BrandMenu from '../BrandMenu';
+// import BrandMenu from '../BrandMenu';
 
 function ProductList() {
   const state = useSelector((state) => {
@@ -55,26 +55,24 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
-      <h4>Our Products:</h4>
-      <BrandMenu />
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              price={product.price}
-              quantity={product.quantity}
-            />
-          ))}
-        </div>
-      ) : (
-        <h3>You haven't added any products yet!</h3>
-      )}
-      {/* {loading ? <img src={spinner} alt="loading" /> : null} */}
+    <div id='product-list' className="my-2">
+    {state.products.length ? (
+      <div className="flex-row">
+        {filterProducts().map((product) => (
+          <ProductItem
+            key={product._id}
+            _id={product._id}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+            quantity={product.quantity}
+          />
+        ))}
+      </div>
+    ) : (
+      <h3>You haven't added any products yet!</h3>
+    )}
+    {/* {loading ? <img src={spinner} alt="loading" /> : null} */}
     </div>
   );
 }
