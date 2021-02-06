@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/react-hooks';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css'
 import { QUERY_BRANDS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
@@ -9,6 +9,7 @@ import {
   UPDATE_BRANDS,
   UPDATE_CURRENT_BRAND,
 } from '../../utils/actions';
+// import ProductList from '../ProductList';
 
 function BrandMenu() {
   const state = useSelector((state) => {
@@ -46,21 +47,42 @@ function BrandMenu() {
     dispatch({
       type: UPDATE_CURRENT_BRAND,
       currentBrand: id,
+      location: document.getElementById("product-list").scrollIntoView({behavior: 'smooth'})
     });
   };
 
+  const handleAllShoesClick = () => {
+    dispatch({
+      type: UPDATE_CURRENT_BRAND,
+      currentBrand: '',
+      location: document.getElementById("product-list").scrollIntoView({behavior: 'smooth'})
+    })
+  }
+  
+
   return (
     <div className='scrollmenu'>
+      
+      <Link 
+        id='all-brands'
+        onClick={() => {
+          handleAllShoesClick()
+        }}
+      >
+        All Shoes
+      </Link>
+
       {brands.map((item) => (
-        <button
+        <Link
           key={item._id}
           onClick={() => {
             handleClick(item._id);
           }}
         >
           {item.name}
-        </button>
+        </Link>
       ))}
+
     </div>
   );
 }

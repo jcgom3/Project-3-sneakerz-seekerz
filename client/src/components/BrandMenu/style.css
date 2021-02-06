@@ -3,9 +3,12 @@
     overflow: auto;
     white-space: nowrap;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 75;
 }
 
-.scrollmenu button {
+.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -13,6 +16,8 @@
     text-decoration: none;
 }
 
-.scrollmenu button:hover {
+.scrollmenu a:hover {
     background-color: #777;
+    color: white;
+    text-decoration: none;
 }

@@ -20,7 +20,7 @@ import ContactUs from './pages/ContactUs';
 
 import ProductList from './components/ProductList'
 // import Footer from './components/Footer';
-// import Detail from './pages/Detail';
+import Detail from './pages/Detail';
 import Success from './pages/Success';
 
 
@@ -55,6 +55,7 @@ function App() {
               <Route exact path='/contact-us' component={ContactUs} />
               <Route exact path='/developers' component={Developers}/>
               <Route exact path='/productlist' component={ProductList} />
+              <Route exact path='/products/:id' component={Detail} />
               <Route ecact path='/success' component={Success} />
             </Switch>
           </div>

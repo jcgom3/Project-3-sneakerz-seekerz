@@ -48,6 +48,9 @@ function ProductList() {
     if (!currentBrand) {
       return state.products;
     }
+    // else if (currentBrand === 'All Shoes') {
+    //   return state.products;
+    // }
 
     return state.products.filter(
       (product) => product.brand._id === currentBrand
