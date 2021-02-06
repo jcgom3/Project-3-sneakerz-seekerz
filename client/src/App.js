@@ -42,19 +42,21 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="App">
-          <Nav />
-          <Switch>
-            <Route exact path='/' component={LandingPage}/>
-            <Route exact path='/login' component={Login}/>
-            <Route exact path='/signup' component={Signup}/>
-            <Route exact path='/contact-us' component={ContactUs} />
-            <Route exact path='/developers' component={Developers}/>
-            <Route exact path='/productlist' component={ProductList}/>
-            <Route exact path='/products/:id' component={Detail} />
-            <Route ecact path='/success' component={Success} />
-          </Switch>
-          <Footer></Footer>
+        <div id='page-container'>
+          <div id="content-wrap" className="App">
+            <Nav />
+            <Switch>
+              <Route exact path='/' component={LandingPage}/>
+              <Route exact path='/login' component={Login}/>
+              <Route exact path='/signup' component={Signup}/>
+              <Route exact path='/contact-us' component={ContactUs} />
+              <Route exact path='/developers' component={Developers}/>
+              <Route exact path='/productlist' component={ProductList}/>
+              <Route exact path='/products/:id' component={Detail} />
+              <Route ecact path='/success' component={Success} />
+            </Switch>
+          </div>
+          <Footer/>
         </div>
       </Router>
     </ApolloProvider>
