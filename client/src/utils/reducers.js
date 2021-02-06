@@ -29,18 +29,20 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 products: [...action.products],
             };
-        // if the action type value is the value of `UPDATE_CATEGORIES`, return a new state object with an updated categories array
+        // if the action type value is the value of `UPDATE_BRANDS`, return a new state object with an updated brands array
         case UPDATE_BRANDS:
             return {
                 ...state,
                 brands: [...action.brands]
             };
-        // if the action type value is the value of `UPDATE_CURRENT_CATEGORY`, return a new state object with an updated currentCategory value
+        // if the action type value is the value of `UPDATE_CURRENT_BRAND`, return a new state object with an updated currentBrand value
         case UPDATE_CURRENT_BRAND:
-            return {
-                ...state,
-                currentBrand: action.currentBrand
-            };
+            // if (currentBrand === 'All Shoes') {
+                return {
+                    ...state,
+                    currentBrand: action.currentBrand,
+                };
+            // };
         // if the action type is ADD_TO_CART, return a new state object with the updated cart object
         case ADD_TO_CART:
             return {

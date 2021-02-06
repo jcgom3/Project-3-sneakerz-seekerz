@@ -5,9 +5,11 @@ import { ApolloProvider } from '@apollo/react-hooks'
 import ApolloClient from 'apollo-boost'
 
 import LandingPage from './components/LandingPage'
-import Nav from "./components/Nav/index";
+import Nav from "./components/Nav";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
+import Cart from './components/Cart';
+// import BrandMenu from './components/BrandMenu';
 
 import Developers from './pages/Developers/Developers'
 // import Products from './pages/Products'
@@ -45,13 +47,14 @@ function App() {
         <div id='page-container'>
           <div id="content-wrap" className="App">
             <Nav />
+            <Cart /> 
             <Switch>
               <Route exact path='/' component={LandingPage}/>
               <Route exact path='/login' component={Login}/>
               <Route exact path='/signup' component={Signup}/>
               <Route exact path='/contact-us' component={ContactUs} />
               <Route exact path='/developers' component={Developers}/>
-              <Route exact path='/productlist' component={ProductList}/>
+              <Route exact path='/productlist' component={ProductList} />
               <Route exact path='/products/:id' component={Detail} />
               <Route ecact path='/success' component={Success} />
             </Switch>
