@@ -62,9 +62,10 @@ function BrandMenu() {
 
   return (
     <div className='scrollmenu'>
-      
+
       <Link 
         id='all-brands'
+        to=''
         onClick={() => {
           handleAllShoesClick()
         }}
@@ -75,6 +76,7 @@ function BrandMenu() {
       {brands.map((item) => (
         <Link
           key={item._id}
+          to=''
           onClick={() => {
             handleClick(item._id);
           }}

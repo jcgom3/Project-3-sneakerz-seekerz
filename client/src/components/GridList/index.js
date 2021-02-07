@@ -16,8 +16,8 @@ function GridList() {
   };
 
   return (
-    <div>
-      <Carousel activeIndex={index} onSelect={handleSelect} pause={'hover'} controls={true} prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon" />} nextIcon={<span aria-hidden="true" className="carousel-control-next-icon"/>}>
+    <div className='background-color'>
+      <Carousel activeIndex={index} onSelect={handleSelect} pause={'hover'}>
         <Carousel.Item>
           <img
             className="d-block w-100 img1"

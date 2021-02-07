@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Nav.css';
 import { IconContext } from 'react-icons';
+// import LandingPage from '../LandingPage';
 // import { Button, Modal } from 'react-bootstrap';
 
 function Nav() {
@@ -12,17 +13,25 @@ function Nav() {
   
     const showSidebar = () => setSidebar(!sidebar);
 
+    // const dispatch = useDispatch();
+
     // const [smShow, setSmShow] = useState(false);
     // const [lgShow, setLgShow] = useState(false);
+
+    // const handleHomePage = () => {
+    //   dispatch({
+    //     location: 
+    //   })
+    // }
   
     return (
       <>
         <IconContext.Provider value={{ color: '#fff' }}>
           <div className='navbar'>
-            <Link to='#' className='menu-bars'>
-              <FaIcons.FaBars onClick={showSidebar} />
-            </Link>
-            <h1>Sneakerz-Seekerz</h1>
+            {/* <Link to='' className='menu-bars'> */}
+              <FaIcons.FaBars className='menu-bars' onClick={showSidebar} />
+            {/* </Link> */}
+            <h1><Link to='/' className='title'>Sneakerz-Seekerz</Link></h1>
           </div>
           <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>

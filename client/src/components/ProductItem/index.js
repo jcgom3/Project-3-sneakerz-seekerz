@@ -40,7 +40,7 @@ function ProductItem(item) {
 
   return (
     <div className="product-container height px-1 py-1">
-      <Link to={`/products/${_id}`}>
+      <Link to={`/products/${_id}`} className='white-text'>
         <img alt={name} src={`/images/${image}`} />
         <p className='white-text'>{name}</p>
       </Link>
@@ -51,7 +51,7 @@ function ProductItem(item) {
           </div>
           <span>${price}</span>
         </div>
-        <button class='add-to-cart' onClick={addToCart}>Add to cart</button>
+        <button className='add-to-cart' onClick={addToCart}>Add to cart</button>
       </div>
     </div>
   );
