@@ -78,3 +78,13 @@
     margin-left: 10px;
     letter-spacing: 6px;
   }
+
+  .title {
+    color: white;
+    text-decoration: none;
+  }
+
+  .title:hover {
+    text-decoration: none;
+    color: white;
+  }
