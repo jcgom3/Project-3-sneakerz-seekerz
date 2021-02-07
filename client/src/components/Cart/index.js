@@ -45,14 +45,6 @@ const Cart = () => {
         dispatch({ type: TOGGLE_CART });
     }
 
-    // if (!state.cartOpen) {
-    //     return (
-    //         <div className="cart-closed" onClick={toggleCart}>
-    //             <span role="img" aria-label="cart">🛒</span>
-    //         </div>
-    //     )
-    // }
-
     function calculateTotal() {
         let sum = 0;
         state.cart.forEach(item => {

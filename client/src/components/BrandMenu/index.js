@@ -9,7 +9,6 @@ import {
   UPDATE_BRANDS,
   UPDATE_CURRENT_BRAND,
 } from '../../utils/actions';
-// import ProductList from '../ProductList';
 
 function BrandMenu() {
   const state = useSelector((state) => {
@@ -23,9 +22,7 @@ function BrandMenu() {
   const { loading, data: brandData } = useQuery(QUERY_BRANDS);
 
   useEffect(() => {
-    // if brandData exists or has changed from the response of useQuery, then run dispatch()
     if (brandData) {
-      // execute our dispatch function with our action object indicating the type of action and the data to set our state for brands to
       dispatch({
         type: UPDATE_BRANDS,
         brands: brandData.brands

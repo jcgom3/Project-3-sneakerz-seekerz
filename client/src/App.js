@@ -3,28 +3,17 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks'
 import ApolloClient from 'apollo-boost'
-
 import LandingPage from './components/LandingPage'
 import Nav from "./components/Nav";
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
 import Cart from './components/Cart';
-// import BrandMenu from './components/BrandMenu';
-
 import Developers from './pages/Developers/Developers'
-// import Products from './pages/Products'
 import Footer from './components/Footer';
 import ContactUs from './pages/ContactUs';
-
-
-
-import ProductList from './components/ProductList'
-// import Footer from './components/Footer';
+import ProductsPage from './components/ProductsPage'
 import Detail from './pages/Detail';
 import Success from './pages/Success';
-
-
-
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -40,7 +29,6 @@ const client = new ApolloClient({
 
 function App() {
   
-
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -54,7 +42,7 @@ function App() {
               <Route exact path='/signup' component={Signup}/>
               <Route exact path='/contact-us' component={ContactUs} />
               <Route exact path='/developers' component={Developers}/>
-              <Route exact path='/productlist' component={ProductList} />
+              <Route exact path='/products-page' component={ProductsPage} />
               <Route exact path='/products/:id' component={Detail} />
               <Route ecact path='/success' component={Success} />
             </Switch>

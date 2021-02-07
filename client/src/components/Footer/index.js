@@ -7,10 +7,7 @@ function Footer() {
         borderTop: "1px solid #E7E7E7",
         textAlign: "center",
         padding: "20px",
-        // position: "fixed",
         left: "0",
-        // bottom: "0",
-        // width: "100%",
         opacity: "0.5",
         color: "white"
     };

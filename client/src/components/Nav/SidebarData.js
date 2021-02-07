@@ -1,8 +1,5 @@
 import React from 'react';
-// import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-// import Modals from './Modal/index';
-// import * as IoIcons from "react-icons/io";
 
 export const SidebarData = [
     {
@@ -11,24 +8,12 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
-    // {
-    //     title: 'Buyers',
-    //     path: '/',
-    //     icon: <AiIcons.AiFillHome />,
-    //     cName: 'nav-text'
-    // },
     {
         title: 'Products',
-        path: '/productList',
+        path: '/products-page',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
-    // {
-    //     title: 'Sell',
-    //     path: '/sell',
-    //     icon: <AiIcons.AiFillHome />,
-    //     cName: 'nav-text'
-    // },
     {
         title: 'Contact Us',
         path: '/contact-us',
@@ -47,6 +32,4 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
-
-    // <Modals></Modals>
 ]

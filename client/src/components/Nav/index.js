@@ -5,32 +5,17 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Nav.css';
 import { IconContext } from 'react-icons';
-// import LandingPage from '../LandingPage';
-// import { Button, Modal } from 'react-bootstrap';
 
 function Nav() {
     const [sidebar, setSidebar] = useState(false);
   
     const showSidebar = () => setSidebar(!sidebar);
-
-    // const dispatch = useDispatch();
-
-    // const [smShow, setSmShow] = useState(false);
-    // const [lgShow, setLgShow] = useState(false);
-
-    // const handleHomePage = () => {
-    //   dispatch({
-    //     location: 
-    //   })
-    // }
   
     return (
       <>
         <IconContext.Provider value={{ color: '#fff' }}>
           <div className='navbar'>
-            {/* <Link to='' className='menu-bars'> */}
-              <FaIcons.FaBars className='menu-bars' onClick={showSidebar} />
-            {/* </Link> */}
+            <FaIcons.FaBars className='menu-bars' onClick={showSidebar} />
             <h1><Link to='/' className='title'>Sneakerz-Seekerz</Link></h1>
           </div>
           <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -51,20 +36,6 @@ function Nav() {
                 );
               })}
             </ul>
-            {/* <Button onClick={() => setLgShow(true)}>Sign-up</Button>
-            <Modal
-          size="lg"
-          show={lgShow}
-          onHide={() => setLgShow(false)}
-          aria-labelledby="example-modal-sizes-title-lg"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-lg">
-              Sign-Up below
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
-        </Modal> */}
           </nav>
         </IconContext.Provider>
       </>

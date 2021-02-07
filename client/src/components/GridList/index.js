@@ -5,7 +5,6 @@ import image1 from '../../Img/shoe-1.jpg';
 import image2 from '../../Img/shoe-2.jpg';
 import image3 from '../../Img/shoe-4.jpg';
 import "bootstrap/dist/css/bootstrap.css"
-// import Carousel from 'react-bootstrap/Carousel'
 
 function GridList() {
 

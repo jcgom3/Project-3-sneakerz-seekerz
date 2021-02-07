@@ -25,8 +25,6 @@ export function pluralize(name, count) {
       request.onerror = function(e) {
         console.log('There was an error');
       };
-
-      // console.log(store)
   
       // on database open success
       request.onsuccess = function(e) {

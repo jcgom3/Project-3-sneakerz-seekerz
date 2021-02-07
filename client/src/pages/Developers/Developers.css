@@ -1,22 +1,22 @@
-.developers{
+.developers {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width:100vw;
 }
-.h2{
+.h2 {
     font-size: 5vw;
     text-align: right;
     align-self: right;
 }
-.dev-name{
+.dev-name {
     width: 100%;
     font-size: 12vw;
     text-align: right;
     padding-bottom: 2%;
     
 }
-.dev-block{
+.dev-block {
     display: flex;
     flex-wrap: wrap;
     background-color:#060b26;
@@ -33,24 +33,23 @@
     box-shadow:1rem 2rem .25rem 0px black;
 
 }
-.about-dev{
+.about-dev {
     display: flex;
     flex-wrap: wrap;
 }
-.github-link{
+.github-link {
     text-decoration: underline;
     font-style: italic;
     font-weight: bolder;
     color: white;
     font-size:4vh;
 }
-.about-dev p{
+.about-dev p {
 width: 100%;
 color: white;
 }
-@media screen and (max-width:800px){
-footer{
-
-    height: 10%
-}
+@media screen and (max-width:800px) {
+    footer{
+        height: 10%
+    }
 }

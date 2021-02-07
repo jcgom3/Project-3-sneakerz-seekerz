@@ -258,7 +258,6 @@ const products = await Product.insertMany([
     }
 ]);
 
-
 console.log('product seeded');
 
 await User.deleteMany();
@@ -279,7 +278,6 @@ await User.create({
     email: 'jsaun@gmail.com',
     password: 'hfida'
 });
-
 
 console.log('user seeded');
 
