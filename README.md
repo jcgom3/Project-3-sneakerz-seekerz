@@ -57,7 +57,7 @@ A place where you can see current cases, people that had been vaccinated and sig
 # Heroku
 
 
-!(https://covid-19-vax-locations.herokuapp.com/)
+!(http://sneakerz-seekerz.herokuapp.com/)
 
 
 # License
