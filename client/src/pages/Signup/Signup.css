@@ -1,0 +1,140 @@
+.Signup {
+  display: inline-flex;
+  background-color:rgb(2, 223, 223);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items:center
+}
+
+button {
+  all: unset;
+}
+
+.sgn-input {
+  all: unset;
+  width: 100%;
+  font-size: 5vh;
+}
+
+.img {
+  display: flex;
+  box-shadow: 1px 2px 50px 1px #060b26;
+  width: 40vw;
+  height: 85vh;
+}
+
+.card {
+  display: inline-flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color:#060b26;
+  color: white;
+  width:50vw;
+  height:85vh;
+  /* margin: 2vh; */
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0 4% 4% 0%;
+  border: black;
+  border-style: double;
+  text-align: center;
+}
+
+.wrapper:hover {
+  box-shadow:1px 2px 20px 1px #060b26;
+}
+
+.wrapper {
+  display: inline-flex;
+  border-radius: 4%;
+  box-shadow: 1px 2px 50px 1px #060b26;
+  transition: .3s;
+  overflow: hidden;
+}
+
+
+.card-hdr {
+  border-bottom:3px groove#060b26;
+  width: 100%;
+  text-align: center;
+  font-size:15vh;
+  color:white;
+  margin-bottom:.5vh;
+  padding-top: 3%;
+}
+
+
+.card-body {
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-ftr {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sgn-signup-btn {
+  text-decoration: none;
+  background-color: green;
+  color: #060b26;
+  width: 45%;
+  height:90%;
+  font-size: 5vh;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.sgn-login-btn {
+  text-decoration: none;
+  background-color: yellow;
+  color:#060b26;
+  border-radius:50%;
+  font-size: 4.5vh;
+  width: 45%;
+  height:90%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.sgn-signup-btn:hover,.sgn-login-btn:hover {
+  color: #fff;
+}
+
+.signup-form {
+  display:inline-block;
+  text-align:left;
+  margin-top: 2vw;
+  margin: 1vw;
+  flex-wrap: nowrap;
+  height: 100%;
+  font-size: 3vh;
+}
+.error-text {
+  font-size: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:760px){
+  .Signup img{
+  display: none;
+  }
+  .wrapper{
+  width: 85%;
+  }
+  .card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .Signup h2{
+    font-size: 15vw;
+  }
+}

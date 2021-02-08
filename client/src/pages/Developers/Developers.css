@@ -1,0 +1,55 @@
+.developers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100vw;
+}
+.h2 {
+    font-size: 5vw;
+    text-align: right;
+    align-self: right;
+}
+.dev-name {
+    width: 100%;
+    font-size: 12vw;
+    text-align: right;
+    padding-bottom: 2%;
+    
+}
+.dev-block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#060b26;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    border-radius: 4%;
+    text-align: center;
+    font-size: 1.8vw;
+    width: 90%;
+    height: 25%;
+    padding:2%;
+    border:whitesmoke;
+    border-style:solid ;
+    box-shadow:1rem 2rem .25rem 0px black;
+
+}
+.about-dev {
+    display: flex;
+    flex-wrap: wrap;
+}
+.github-link {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+    font-size:4vh;
+}
+.about-dev p {
+width: 100%;
+color: white;
+}
+@media screen and (max-width:800px) {
+    footer{
+        height: 10%
+    }
+}

@@ -1,10 +1,18 @@
 import React from 'react';
+import ProductList from '../ProductList';
+import BrandMenu from '../BrandMenu';
+import GridList from '../GridList';
+import './style.css';
 
-function LandingPage() {
+const LandingPage = () => {
 
     return (
-        <h1>LandingPage</h1>
-    )
-}
+        <div className='home center'>
+            <BrandMenu />
+            <GridList />
+            <ProductList />
+        </div>
+    );
+};
 
 export default LandingPage;
