@@ -47,7 +47,7 @@ Then it functions like a native app
 
 # Snapshot
 
-[!Sneakerz-Seekerz](client/public/images/Sneakerz-Seekerz-Home-page.PNG)
+(!Sneakerz-Seekerz)[client/public/images/Sneakerz-Seekerz-Home-page.PNG]
 
 
 
