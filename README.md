@@ -47,7 +47,7 @@ Then it functions like a native app
 
 # Snapshot
 
-[![Sneakerz-Seekerz](client/public/images/Sneakerz-Seekerz-Home-page.PNG)]
+![Sneakerz-Seekerz](client/public/images/Sneakerz-Seekerz-Home-page.PNG)
 
 
 
@@ -65,11 +65,12 @@ Then it functions like a native app
 * [Questions](#questions)
 
 # Installation & Database SetUp
-* 
-*
-*
-*
-*
+* To use this app npm init has to be called to create your package.json file.
+* The following necessary Npm dependencies must be installed to run the application properly: the needed dependencies will be found on the package.json file.
+* To properly install the database you must create at cluster on Mongodb atlas.
+* Run "npm run seed" to properly introduce seeded items"
+* Run "npm start" for the port to start listening with mongoose.
+This app is deployed on Heroku
 
 
 
@@ -84,7 +85,7 @@ Then it functions like a native app
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-# Contributing
+# Contributions
 
 ​Contributors: Juan Gomez, Matthew Cowley, Nikita Pokamestov, Jonathan Saunders & Justin Jenkins
 
