@@ -88,3 +88,12 @@
     text-decoration: none;
     color: white;
   }
+
+  .user-div {
+    display: flex;
+  }
+
+  .order-history {
+    white-space: nowrap;
+    padding-right: 20px;
+  }

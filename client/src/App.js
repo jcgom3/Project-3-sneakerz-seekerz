@@ -14,6 +14,7 @@ import ContactUs from './pages/ContactUs';
 import ProductsPage from './components/ProductsPage'
 import Detail from './pages/Detail';
 import Success from './pages/Success';
+import OrderHistory from './pages/OrderHistory/OrderHistory';
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -44,6 +45,7 @@ function App() {
               <Route exact path='/developers' component={Developers}/>
               <Route exact path='/products-page' component={ProductsPage} />
               <Route exact path='/products/:id' component={Detail} />
+              <Route exact path="/orderHistory" component={OrderHistory} />
               <Route ecact path='/success' component={Success} />
             </Switch>
           </div>
